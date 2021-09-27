@@ -7,10 +7,21 @@ func main() {
 
 	variablesConstantes()
 	operadoresAritmeticos()
+	fmtFuncion()
+
+	// call function
+	simpleValue := returnValue(3)
+
+	value1, value2 := returnDouble(2)
+
+	// si solo necesitas uno le pones el ( _ ) donde no lo necesitas
+
+	fmt.Println("The value is ", simpleValue)
+
+	fmt.Println("The double value is", value1, value2)
 
 }
 
-// i am kador
 func variablesConstantes() {
 	// clase 1 iniciales
 
@@ -59,4 +70,51 @@ func operadoresAritmeticos() {
 
 	fmt.Print("la multiplicacion es ", x*y)
 
+	fmt.Print("La division es :", x/y)
+
+	fmt.Println("El modulo de los dos numeros es", x%y)
+
+	x++
+	fmt.Println("El incremento eso ", x)
+
+	x--
+	fmt.Println("El decremento eso ", x)
+
+	funcinWithArguments("Hola mundo", "Kevin", 28, 1, 1.87)
+
+}
+
+func fmtFuncion() {
+	helloMessage := "Hello"
+	worldMessage := "World"
+	fmt.Println(helloMessage, worldMessage)
+
+	nombre := "Platzi"
+	cursos := 500
+	fmt.Printf("%s tiene mas de %d cursos\n", nombre, cursos)
+	fmt.Printf("%v tiene mas de %d cursos\n", nombre, cursos)
+
+	// sprintf lo que reuslta lo guarda en message
+	message := fmt.Sprintf("%s tienes mas de %d cursos\n", nombre, cursos)
+	fmt.Println(message)
+
+	// tipos de datos
+	fmt.Printf("Hello : %T\n ", helloMessage)
+
+	fmt.Printf("Cursos : %T\n", cursos)
+
+}
+
+func funcinWithArguments(msg string, name string, age, pen int, salary float64) {
+
+	fmt.Printf("El mensaje que te mando es %s , me llamo %s, tengo %d años y mido %f y tengo un %d", msg, name, age, salary, pen)
+
+}
+
+func returnValue(arg int) int {
+	return arg
+}
+
+func returnDouble(arg int) (c, d int) {
+	return arg, 2 * arg
 }
