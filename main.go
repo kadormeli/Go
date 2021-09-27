@@ -10,6 +10,7 @@ func main() {
 
 }
 
+// i am kador
 func variablesConstantes() {
 	// clase 1 iniciales
 
