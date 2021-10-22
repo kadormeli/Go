@@ -12,4 +12,6 @@ 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
 - [ ] QA
 
 
-![Imagen_movimiento_general](https://ibb.co/GR94hPC)
+
+[![Captura-de-Pantalla-2021-10-22-a-la-s-12-21-02-p-m.png](https://i.postimg.cc/SKJzRwr4/Captura-de-Pantalla-2021-10-22-a-la-s-12-21-02-p-m.png)](https://postimg.cc/mcWr6pJp)
+
